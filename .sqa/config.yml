@@ -1,0 +1,62 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/1.7.11
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/darce-i3m/sqaaas-web:
+      branch: master
+      repo: https://github.com/darce-i3m/sqaaas-web
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/darce-i3m/sqaaas-web git:
+        commands:
+        - /usr/bin/env sh .sqa/script.bumpy-zucchini-echidna.sh
+        container: qc.acc_grumpy-cream-russel
+  QC.Doc:
+    repos:
+      github.com/darce-i3m/sqaaas-web find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.gloppy-lavender-millipede.sh
+        container: qc.doc_squeaky-linen-eagle
+      github.com/darce-i3m/sqaaas-web git:
+        commands:
+        - /usr/bin/env sh .sqa/script.randy-cerulean-tuatara.sh
+        container: qc.doc_shaggy-white-vulture
+      github.com/darce-i3m/sqaaas-web markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.crappy-sepia-horse.sh
+        container: qc.doc_snazzy-olivine-hedgehog
+  QC.Lic:
+    repos:
+      github.com/darce-i3m/sqaaas-web licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.ugly-chartreuse-dingo.sh
+        container: qc.lic_skanky-saffron-paradise
+  QC.Met:
+    repos:
+      github.com/darce-i3m/sqaaas-web cff-converter-python:
+        commands:
+        - /usr/bin/env sh .sqa/script.pokey-chestnut-gorilla.sh
+        container: qc.met_scanty-cerulean-bulldog
+  QC.Sty:
+    repos:
+      github.com/darce-i3m/sqaaas-web hadolint:
+        commands:
+        - /usr/bin/env sh .sqa/script.ready-violet-woodpecker.sh
+        container: qc.sty_homey-sangria-tarsier
+      github.com/darce-i3m/sqaaas-web jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.nerdy-purple-akbash.sh
+        container: qc.sty_droopy-harlequin-cuscus
+  QC.Ver:
+    repos:
+      github.com/darce-i3m/sqaaas-web get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.sleazy-amaranth-reindeer.sh
+        container: qc.ver_blurry-taupe-antelope
+timeout: 5400
