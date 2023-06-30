@@ -15,48 +15,48 @@ sqa_criteria:
     repos:
       github.com/darce-i3m/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-vermilion-rhinoceros.sh
-        container: qc.acc_foggy-dandelion-macaw
+        - /usr/bin/env sh .sqa/script.woozy-seashell-angelfish.sh
+        container: qc.acc_sleepy-salmon-moth
   QC.Doc:
     repos:
       github.com/darce-i3m/sqaaas-web find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-goldenrod-eagle.sh
-        container: qc.doc_pretty-puce-angora
+        - /usr/bin/env sh .sqa/script.whiny-maroon-tetra.sh
+        container: qc.doc_messy-white-millipede
       github.com/darce-i3m/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-goldenrod-axolotl.sh
-        container: qc.doc_tacky-blue-chin
+        - /usr/bin/env sh .sqa/script.nerdy-peach-stingray.sh
+        container: qc.doc_fuzzy-ecru-angelfish
       github.com/darce-i3m/sqaaas-web markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-yellow-cichlid.sh
-        container: qc.doc_messy-blue-chicken
+        - /usr/bin/env sh .sqa/script.snoopy-grey-llama.sh
+        container: qc.doc_flabby-mustard-goat
   QC.Lic:
     repos:
       github.com/darce-i3m/sqaaas-web licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-seashell-bat.sh
-        container: qc.lic_slaphappy-aqua-wildebeest
+        - /usr/bin/env sh .sqa/script.silly-apricot-badger.sh
+        container: qc.lic_muggy-ivory-cattle
   QC.Met:
     repos:
       github.com/darce-i3m/sqaaas-web cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-mustard-dogfish.sh
-        container: qc.met_craggy-wheat-bonobo
+        - /usr/bin/env sh .sqa/script.lovely-ecru-shark.sh
+        container: qc.met_gamy-ecru-ray
   QC.Sty:
     repos:
       github.com/darce-i3m/sqaaas-web hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-bronze-pig.sh
-        container: qc.sty_nippy-chartreuse-dog
+        - /usr/bin/env sh .sqa/script.flimsy-orchid-wombat.sh
+        container: qc.sty_grumpy-turquoise-camel
       github.com/darce-i3m/sqaaas-web jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-white-booby.sh
-        container: qc.sty_pokey-corn-anteater
+        - /usr/bin/env sh .sqa/script.smelly-dandelion-ostrich.sh
+        container: qc.sty_pretty-orchid-dragon
   QC.Ver:
     repos:
       github.com/darce-i3m/sqaaas-web get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.scummy-celadon-sheep.sh
-        container: qc.ver_cloudy-azure-coyote
+        - /usr/bin/env sh .sqa/script.homely-wisteria-coral.sh
+        container: qc.ver_hasty-charcoal-vulture
 timeout: 5400
