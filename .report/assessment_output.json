@@ -1,7 +1,7 @@
 {
     "meta": {
         "version": "2.9.3",
-        "report_json_url": "https://github.com/eosc-synergy/.report/assessment_output.json"
+        "report_json_url": "https://github.com/eosc-synergy/sqaaas-web.assess.sqaaas/.report/assessment_output.json"
     },
     "repository": [
         {
