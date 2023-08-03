@@ -1,5 +1,8 @@
 {
-    "version": "2.9.3",
+    "meta": {
+        "version": "2.9.3",
+        "report_json_url": "https://github.com/eosc-synergy/.report/assessment_output.json"
+    },
     "repository": [
         {
             "tag": "master",
