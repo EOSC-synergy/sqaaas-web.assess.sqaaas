@@ -3,6 +3,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/darce-i3m/sqaaas-web &&
-    mdl --json .
+cd github.com/eosc-synergy/sqaaas-web &&
+    jsonlint-cli "**/*.json"
 )
