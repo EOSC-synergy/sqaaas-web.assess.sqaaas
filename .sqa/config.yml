@@ -15,28 +15,48 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.skanky-persimmon-turtle.sh
-        container: qc.acc_blurry-wheat-eel
+        - /usr/bin/env sh .sqa/script.stealthy-purple-sloth.sh
+        container: qc.acc_randy-ruby-tang
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-web find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-cornflower-jackal.sh
-        container: qc.doc_gummy-rust-chipmunk
+        - /usr/bin/env sh .sqa/script.dorky-lilac-gorilla.sh
+        container: qc.doc_woolly-alizarin-nightingale
       github.com/EOSC-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-cerise-spaniel.sh
-        container: qc.doc_cranky-chocolate-panda
+        - /usr/bin/env sh .sqa/script.tacky-white-lemming.sh
+        container: qc.doc_gimpy-indigo-stoat
+      github.com/EOSC-synergy/sqaaas-web markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.pasty-olive-angelfish.sh
+        container: qc.doc_cozy-crimson-newt
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-web licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-ivory-lion.sh
-        container: qc.lic_tasty-gold-insect
+        - /usr/bin/env sh .sqa/script.stealthy-firebrick-eel.sh
+        container: qc.lic_skinny-eggplant-bulldog
+  QC.Met:
+    repos:
+      github.com/EOSC-synergy/sqaaas-web cff-converter-python:
+        commands:
+        - /usr/bin/env sh .sqa/script.hasty-cornflower-jackal.sh
+        container: qc.met_snappy-cinnamon-chamois
+  QC.Sty:
+    repos:
+      github.com/EOSC-synergy/sqaaas-web hadolint:
+        commands:
+        - /usr/bin/env sh .sqa/script.hazy-viridian-nightingale.sh
+        container: qc.sty_homey-beige-hyena
+      github.com/EOSC-synergy/sqaaas-web jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.homely-amaranth-crab.sh
+        container: qc.sty_droopy-smalt-drever
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-web get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-ochre-stingray.sh
-        container: qc.ver_pretty-buff-chin
+        - /usr/bin/env sh .sqa/script.lovely-magnolia-termite.sh
+        container: qc.ver_cheeky-salmon-shrimp
 timeout: 5400
