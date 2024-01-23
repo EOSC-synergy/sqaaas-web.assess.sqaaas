@@ -3,6 +3,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/eosc-synergy/sqaaas-web &&
+cd github.com/EOSC-synergy/sqaaas-web &&
     cffconvert --validate
 )
