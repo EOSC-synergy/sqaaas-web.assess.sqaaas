@@ -4,39 +4,39 @@ config:
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: release/2.0.0
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
-    github.com/eosc-synergy/sqaaas-web:
+    github.com/EOSC-synergy/sqaaas-web:
       branch: master
-      repo: https://github.com/eosc-synergy/sqaaas-web
+      repo: https://github.com/EOSC-synergy/sqaaas-web
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/eosc-synergy/sqaaas-web git:
+      github.com/EOSC-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-charcoal-flounder.sh
-        container: qc.acc_snoopy-cobalt-urchin
+        - /usr/bin/env sh .sqa/script.gamy-russet-frigatebird.sh
+        container: qc.acc_lanky-tomato-quoll
   QC.Doc:
     repos:
-      github.com/eosc-synergy/sqaaas-web find_doc_files.py:
+      github.com/EOSC-synergy/sqaaas-web find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-charcoal-ray.sh
-        container: qc.doc_silly-xanthic-pinscher
-      github.com/eosc-synergy/sqaaas-web git:
+        - /usr/bin/env sh .sqa/script.cheeky-teal-kakapo.sh
+        container: qc.doc_beady-cerise-armadillo
+      github.com/EOSC-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-salmon-beaver.sh
-        container: qc.doc_baggy-smalt-capuchin
+        - /usr/bin/env sh .sqa/script.scaly-myrtle-zebra.sh
+        container: qc.doc_skanky-puce-tiger
   QC.Lic:
     repos:
-      github.com/eosc-synergy/sqaaas-web licensee:
+      github.com/EOSC-synergy/sqaaas-web licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-lilac-grouse.sh
-        container: qc.lic_frumpy-red-dragonfly
+        - /usr/bin/env sh .sqa/script.boozy-russet-monster.sh
+        container: qc.lic_lumpy-amber-gibbon
   QC.Ver:
     repos:
-      github.com/eosc-synergy/sqaaas-web get_git_tags.py:
+      github.com/EOSC-synergy/sqaaas-web get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-mauve-mammoth.sh
-        container: qc.ver_skimpy-sangria-blue
+        - /usr/bin/env sh .sqa/script.gimpy-heliotrope-squirrel.sh
+        container: qc.ver_scummy-teal-wombat
 timeout: 5400
