@@ -3,6 +3,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/EOSC-synergy/sqaaas-web &&
-    find_doc_files.py --file_type all
+cd github.com/eosc-synergy/sqaaas-web &&
+    git rev-parse --is-inside-work-tree
 )
