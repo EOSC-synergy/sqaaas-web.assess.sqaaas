@@ -4,39 +4,39 @@ config:
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: release/2.0.0
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
-    github.com/eosc-synergy/sqaaas-web:
+    github.com/EOSC-synergy/sqaaas-web:
       branch: master
-      repo: https://github.com/eosc-synergy/sqaaas-web
+      repo: https://github.com/EOSC-synergy/sqaaas-web
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/eosc-synergy/sqaaas-web git:
+      github.com/EOSC-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-yellow-eleuth.sh
-        container: qc.acc_hasty-tangerine-bongo
+        - /usr/bin/env sh .sqa/script.gloppy-aqua-horse.sh
+        container: qc.acc_jumpy-green-discus
   QC.Doc:
     repos:
-      github.com/eosc-synergy/sqaaas-web find_doc_files.py:
+      github.com/EOSC-synergy/sqaaas-web find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-ruby-eleuth.sh
-        container: qc.doc_snoopy-red-walrus
-      github.com/eosc-synergy/sqaaas-web git:
+        - /usr/bin/env sh .sqa/script.lumpy-cerise-corgi.sh
+        container: qc.doc_sunny-chocolate-harrier
+      github.com/EOSC-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-ivory-ibis.sh
-        container: qc.doc_shaggy-red-hyrax
+        - /usr/bin/env sh .sqa/script.lumpy-seashell-dodo.sh
+        container: qc.doc_boozy-olivine-mayfly
   QC.Lic:
     repos:
-      github.com/eosc-synergy/sqaaas-web licensee:
+      github.com/EOSC-synergy/sqaaas-web licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-cerulean-lobster.sh
-        container: qc.lic_tasty-violet-chimpanzee
+        - /usr/bin/env sh .sqa/script.blurry-mauve-cat.sh
+        container: qc.lic_woolly-denim-jaguar
   QC.Ver:
     repos:
-      github.com/eosc-synergy/sqaaas-web get_git_tags.py:
+      github.com/EOSC-synergy/sqaaas-web get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-razzmatazz-spider.sh
-        container: qc.ver_clammy-wisteria-warthog
+        - /usr/bin/env sh .sqa/script.shaggy-charcoal-zebu.sh
+        container: qc.ver_pasty-wheat-wallaby
 timeout: 5400
