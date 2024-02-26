@@ -2,41 +2,41 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/2.0.0
+      branch: feature/fair-epos-prototype
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
-    github.com/EOSC-synergy/sqaaas-web:
+    github.com/eosc-synergy/sqaaas-web:
       branch: master
-      repo: https://github.com/EOSC-synergy/sqaaas-web
+      repo: https://github.com/eosc-synergy/sqaaas-web
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/EOSC-synergy/sqaaas-web git:
+      github.com/eosc-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-taupe-sheep.sh
-        container: qc.acc_hazy-wheat-rattlesnake
+        - /usr/bin/env sh .sqa/script.sloppy-seashell-fox.sh
+        container: qc.acc_snippy-ochre-foxhound
   QC.Doc:
     repos:
-      github.com/EOSC-synergy/sqaaas-web find_doc_files.py:
+      github.com/eosc-synergy/sqaaas-web find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-gold-audemer.sh
-        container: qc.doc_leaky-cornflower-chamois
-      github.com/EOSC-synergy/sqaaas-web git:
+        - /usr/bin/env sh .sqa/script.woozy-scarlet-snake.sh
+        container: qc.doc_bluesy-asparagus-zebra
+      github.com/eosc-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-gamboge-russel.sh
-        container: qc.doc_wheezy-salmon-emu
+        - /usr/bin/env sh .sqa/script.wiggy-teal-birman.sh
+        container: qc.doc_messy-amethyst-reindeer
   QC.Lic:
     repos:
-      github.com/EOSC-synergy/sqaaas-web licensee:
+      github.com/eosc-synergy/sqaaas-web licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.cranky-thistle-stingray.sh
-        container: qc.lic_silly-teal-iguana
+        - /usr/bin/env sh .sqa/script.trippy-magenta-chimpanzee.sh
+        container: qc.lic_messy-firebrick-gharial
   QC.Ver:
     repos:
-      github.com/EOSC-synergy/sqaaas-web get_git_tags.py:
+      github.com/eosc-synergy/sqaaas-web get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-burgundy-gerbil.sh
-        container: qc.ver_squeaky-ruby-caiman
+        - /usr/bin/env sh .sqa/script.randy-black-toucan.sh
+        container: qc.ver_queasy-cyan-wombat
 timeout: 5400
