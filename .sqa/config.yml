@@ -2,8 +2,11 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: feature/fair-epos-prototype
+      branch: release/2.0.0
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/eosc-synergy/sqaaas-api-spec:
+      branch: master
+      repo: https://github.com/eosc-synergy/sqaaas-api-spec
     github.com/eosc-synergy/sqaaas-web:
       branch: master
       repo: https://github.com/eosc-synergy/sqaaas-web
@@ -15,28 +18,28 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-seashell-fox.sh
-        container: qc.acc_snippy-ochre-foxhound
+        - /usr/bin/env sh .sqa/script.wimpy-cinnabar-dragon.sh
+        container: qc.acc_ugly-scarlet-hound
   QC.Doc:
     repos:
-      github.com/eosc-synergy/sqaaas-web find_doc_files.py:
+      github.com/eosc-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.woozy-scarlet-snake.sh
-        container: qc.doc_bluesy-asparagus-zebra
-      github.com/eosc-synergy/sqaaas-web git:
+        - /usr/bin/env sh .sqa/script.grumpy-scarlet-badger.sh
+        container: qc.doc_hasty-cornflower-drever
+      github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.wiggy-teal-birman.sh
-        container: qc.doc_messy-amethyst-reindeer
+        - /usr/bin/env sh .sqa/script.flabby-flax-chameleon.sh
+        container: qc.doc_tasty-sapphire-abyssinian
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-web licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-magenta-chimpanzee.sh
-        container: qc.lic_messy-firebrick-gharial
+        - /usr/bin/env sh .sqa/script.zippy-cobalt-woodlouse.sh
+        container: qc.lic_homely-amber-loon
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-web get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-black-toucan.sh
-        container: qc.ver_queasy-cyan-wombat
+        - /usr/bin/env sh .sqa/script.gimpy-tomato-caiman.sh
+        container: qc.ver_lousy-heliotrope-robin
 timeout: 5400
