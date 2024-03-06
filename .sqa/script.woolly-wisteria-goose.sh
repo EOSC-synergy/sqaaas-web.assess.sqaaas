@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/eosc-synergy/sqaaas-web &&
+cd github.com/eosc-synergy/sqaaas-api-spec &&
     mdl --json .
 )
