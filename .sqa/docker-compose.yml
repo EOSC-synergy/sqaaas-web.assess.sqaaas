@@ -36,9 +36,7 @@ services:
       type: bind
     working_dir: /sqaaas-build
   qc.lic_skanky-viridian-peccary:
-    build:
-      context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Lic/licensee
-      dockerfile: Dockerfile
+    image: eoscsynergy/sqaaas-licensee:9.17.0
     command: sleep 6000000
     volumes:
     - source: ./
