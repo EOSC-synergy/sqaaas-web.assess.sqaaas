@@ -2,61 +2,61 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/2.0.1
+      branch: release/2.2.1
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
-    github.com/eosc-synergy/sqaaas-web:
+    github.com/EOSC-synergy/sqaaas-web:
       branch: master
-      repo: https://github.com/eosc-synergy/sqaaas-web
+      repo: https://github.com/EOSC-synergy/sqaaas-web
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/eosc-synergy/sqaaas-web git:
+      github.com/EOSC-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.sunny-gold-mammoth.sh
-        container: qc.acc_gimpy-rust-goat
+        - /usr/bin/env sh .sqa/script.stuffy-ecru-ant.sh
+        container: qc.acc_jumpy-rose-caiman
   QC.Doc:
     repos:
-      github.com/eosc-synergy/sqaaas-web find_doc_files.py:
+      github.com/EOSC-synergy/sqaaas-web find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.baggy-russet-orangutan.sh
-        container: qc.doc_snoopy-harlequin-paradise
-      github.com/eosc-synergy/sqaaas-web git:
+        - /usr/bin/env sh .sqa/script.skinny-azure-kakapo.sh
+        container: qc.doc_leaky-platinum-mastiff
+      github.com/EOSC-synergy/sqaaas-web git:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-gold-boar.sh
-        container: qc.doc_lanky-dandelion-chamois
-      github.com/eosc-synergy/sqaaas-web markdownlint:
+        - /usr/bin/env sh .sqa/script.stinky-magnolia-civet.sh
+        container: qc.doc_ready-champagne-nightingale
+      github.com/EOSC-synergy/sqaaas-web markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-lilac-dragonfly.sh
-        container: qc.doc_stinky-amethyst-havanese
+        - /usr/bin/env sh .sqa/script.sleepy-scarlet-okapi.sh
+        container: qc.doc_greasy-ecru-falcon
   QC.Lic:
     repos:
-      github.com/eosc-synergy/sqaaas-web licensee:
+      github.com/EOSC-synergy/sqaaas-web licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-chocolate-dodo.sh
-        container: qc.lic_pokey-aqua-woodpecker
+        - /usr/bin/env sh .sqa/script.goopy-salmon-bison.sh
+        container: qc.lic_cozy-thistle-lion
   QC.Met:
     repos:
-      github.com/eosc-synergy/sqaaas-web cff-converter-python:
+      github.com/EOSC-synergy/sqaaas-web cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-thistle-octopus.sh
-        container: qc.met_baggy-crimson-dhole
+        - /usr/bin/env sh .sqa/script.queasy-red-squirt.sh
+        container: qc.met_blurry-pear-insect
   QC.Sty:
     repos:
-      github.com/eosc-synergy/sqaaas-web hadolint:
+      github.com/EOSC-synergy/sqaaas-web hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-ruby-pinscher.sh
-        container: qc.sty_paltry-corn-spitz
-      github.com/eosc-synergy/sqaaas-web jsonlint:
+        - /usr/bin/env sh .sqa/script.gummy-beige-burmese.sh
+        container: qc.sty_gummy-brass-gopher
+      github.com/EOSC-synergy/sqaaas-web jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-pink-gerbil.sh
-        container: qc.sty_greasy-buff-catfish
+        - /usr/bin/env sh .sqa/script.tasty-smalt-beagle.sh
+        container: qc.sty_greasy-crimson-robin
   QC.Ver:
     repos:
-      github.com/eosc-synergy/sqaaas-web get_git_tags.py:
+      github.com/EOSC-synergy/sqaaas-web get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-denim-newt.sh
-        container: qc.ver_whiny-harlequin-crocodile
+        - /usr/bin/env sh .sqa/script.sloppy-emerald-beetle.sh
+        container: qc.ver_flaky-teal-eagle
 timeout: 5400
