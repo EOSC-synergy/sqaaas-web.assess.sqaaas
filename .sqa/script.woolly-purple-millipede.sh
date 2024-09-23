@@ -5,5 +5,5 @@
 
 (
 cd github.com/eosc-synergy/sqaaas-web &&
-    mdl --json .
+    licensee detect . --confidence 60 --json 
 )
