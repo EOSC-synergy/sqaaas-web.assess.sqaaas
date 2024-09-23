@@ -5,5 +5,5 @@
 
 (
 cd github.com/EOSC-synergy/sqaaas-web &&
-    cffconvert --validate 
+    git rev-parse --is-inside-work-tree
 )

@@ -5,5 +5,5 @@
 
 (
 cd github.com/EOSC-synergy/sqaaas-web &&
-    git rev-parse --is-inside-work-tree 
+    licensee detect . --confidence 60 --json
 )
