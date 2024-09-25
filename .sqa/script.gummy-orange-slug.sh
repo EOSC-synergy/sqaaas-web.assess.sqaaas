@@ -5,5 +5,5 @@
 
 (
 cd github.com/eosc-synergy/sqaaas-web &&
-    mdl --json  .
+    git rev-parse --is-inside-work-tree
 )
