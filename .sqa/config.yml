@@ -53,6 +53,9 @@ sqa_criteria:
         commands:
         - /usr/bin/env sh .sqa/script.zippy-sapphire-boar.sh
         container: qc.sty_baggy-brass-worm
+      no-repository pyophidia:
+        commands:
+        - curl --output /tmp/test https://github.com/EOSC-synergy/sqaaas-tooling/raw/refs/heads/release/2.3.0/tooling.json
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-web get_git_tags.py:
