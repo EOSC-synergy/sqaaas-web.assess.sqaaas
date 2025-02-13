@@ -5,8 +5,8 @@
     },
     "repository": [
         {
-            "url": "https://github.com/eosc-synergy/sqaaas-web",
-            "name": "eosc-synergy/sqaaas-web",
+            "url": "https://github.com/EOSC-synergy/sqaaas-web",
+            "name": "EOSC-synergy/sqaaas-web",
             "tag": "master",
             "commit_id": "2a296574a69688056c900733e234630716c734b7",
             "is_main_repo": true,
