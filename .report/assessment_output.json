@@ -3,7 +3,7 @@
         "version": "3.5.0",
         "report_json_url": "https://raw.githubusercontent.com/eosc-synergy/sqaaas-web.assess.sqaaas/master/.report/assessment_output.json",
         "report_permalink": "https://sqaaas.eosc-synergy.eu/full-assessment/report/https://raw.githubusercontent.com/eosc-synergy/sqaaas-web.assess.sqaaas/master/.report/assessment_output.json",
-        "timestamp": 1741954029.2245378
+        "timestamp": 1741954586.3673944
     },
     "repository": [
         {
@@ -1395,30 +1395,30 @@
                 "silver": {
                     "to_fulfill": [
                         "QC.Ver",
-                        "QC.Met",
-                        "QC.Doc",
                         "QC.Lic",
+                        "QC.Doc",
+                        "QC.Met",
                         "QC.Acc"
                     ],
                     "missing": [],
                     "fulfilled": [
-                        "QC.Ver",
                         "QC.Met",
-                        "QC.Doc",
+                        "QC.Acc",
+                        "QC.Ver",
                         "QC.Lic",
-                        "QC.Acc"
+                        "QC.Doc"
                     ]
                 },
                 "gold": {
                     "to_fulfill": [
-                        "QC.Ver",
-                        "QC.Met",
-                        "QC.Doc",
-                        "QC.Sty",
-                        "QC.Lic",
-                        "QC.Acc",
                         "QC.Uni",
-                        "QC.Sec"
+                        "QC.Ver",
+                        "QC.Lic",
+                        "QC.Doc",
+                        "QC.Met",
+                        "QC.Sty",
+                        "QC.Sec",
+                        "QC.Acc"
                     ],
                     "missing": [
                         "QC.Uni",
@@ -1426,10 +1426,10 @@
                     ],
                     "fulfilled": [
                         "QC.Ver",
-                        "QC.Met",
-                        "QC.Doc",
-                        "QC.Sty",
                         "QC.Lic",
+                        "QC.Doc",
+                        "QC.Met",
+                        "QC.Sty",
                         "QC.Acc"
                     ]
                 }
